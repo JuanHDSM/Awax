@@ -463,6 +463,10 @@ header {
 
 /* HAPPY CLIENTS */
 
+.default.light.happy {
+  background-color: #EEE;
+}
+
 
 .default.light.happy .section-body {
   max-width: 100%;
@@ -536,4 +540,22 @@ header {
 .section-clients-review {
   margin-bottom: 70px;
   font-size: 14px;
+}
+
+/* SECTION BUSINESS */
+
+.section-business {
+  display: flex;
+  justify-content: center;
+}
+
+.section-business .section-body {
+  display: flex;
+  padding: 50px 0;
+  max-width: 1140px;
+  justify-content: space-between;
+}
+
+.section-business img {
+  margin-right: 50px;
 }
