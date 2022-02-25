@@ -178,6 +178,7 @@ header {
 
 .default .section-title {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .default .section-desc {
@@ -568,6 +569,7 @@ header {
   background-color: #777;
   border: none;
 }
+
 .section-prices {
   display: flex;
   justify-content: space-between;
@@ -623,4 +625,113 @@ header {
 
 .section-prices .button:hover {
   background-color: var(--main-color);
+}
+
+/* PREMIUM */
+
+.default.light.premium {
+  background-color: #FFF;
+}
+
+.default.light.premium .section-body {
+  margin: 0;
+}
+
+.section-premium .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-premium .slider {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+}
+
+.section-premium .slidearea {
+  max-width: 1140px;
+  display: flex;
+  margin: auto;
+  height: 100%;
+  justify-content: space-around;
+  color: #000;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 80px;
+}
+
+.section-premium .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.section-premium .pointer {
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  margin-right: 5px;  
+  cursor: pointer;
+}
+
+.section-premium .pointer.active {
+  background-color: var(--main-color);
+}
+
+.section-premium .premium-title {
+  display: flex;
+  margin-top: 25px;
+}
+
+.section-premium .title {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.section-premium .desc {
+  margin-left: 65px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #999;
+}
+
+.section-premium .features {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  font-size: 13px;
+  color: #999;
+}
+
+.section-premium .feature {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+
+.section-premium .feature::before {
+  content: '';
+  position: relative;
+  width: 10px;
+  height: 2px;
+  right: 6px;
+  top: 8px;
+  background-color: #bbb;
+}
+
+.section-premium .boxbtn {
+  width: 100vw;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  top: 90px;
 }
