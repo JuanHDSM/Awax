@@ -546,19 +546,18 @@ header {
 /* SECTION BUSINESS */
 
 .section-business {
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
 
 .section-business .section-body {
-  display: flex;
   padding: 50px 0;
+  margin: auto;
   max-width: 1140px;
-  justify-content: space-between;
 }
 
-.section-business img {
-  margin-right: 50px;
+.section-business .box-img {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* PRICE */
@@ -572,7 +571,8 @@ header {
 
 .section-prices {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .section-prices .pricearea {
@@ -635,6 +635,7 @@ header {
 
 .default.light.premium .section-body {
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .section-premium .sliders {
@@ -734,4 +735,169 @@ header {
   align-items: center;
   padding-bottom: 80px;
   top: 90px;
+}
+
+/* Some Facts */
+
+.section-some-facts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-some-fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-height: 270px;
+  text-align: center;
+  padding: 15px;
+  width: 230px;
+}
+
+.section-some-fact .numbers{
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.section-some-fact .widget {
+  width: 20px;
+  height: 3px;
+}
+
+
+.section-some-fact h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.section-some-fact p {
+  max-width: 190px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #999;
+}
+
+.section-some-fact:nth-child(2) p,
+.section-some-fact:nth-child(4) p {
+  margin-top: 43px;
+}
+
+/* SOCIAIS */
+
+.section-sociais {
+  border-bottom: 1px solid #ccc;
+}
+
+.section-sociais .section-body {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  padding: 20px 0;
+
+}
+
+.section-sociais .title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #AAA;
+}
+
+.section-sociais .social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.section-sociais .social:nth-child(3) {
+  background-color: #00acee;
+}
+
+.section-sociais .social:nth-child(5) {
+  background-color: #0e76a8;
+}
+
+.section-sociais .social:nth-child(7) {
+  background-color: #3b5998;
+}
+
+.section-sociais .social:nth-child(9) {
+  background-color: #DD4B39;
+}
+
+.section-sociais .social:nth-child(11) {
+  background-color: #c8232c;
+}
+
+.section-sociais .numbers {
+  position: relative;
+  font-size: 11px;
+  right: 30px;
+  font-weight: 600;
+  color: #AAA;
+}
+
+/* CONTACT US */
+
+.default.light.contact-us {
+  background-color: #EEE;
+}
+
+.section-contact-us .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-contact-us input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #BBB;
+  outline: none;
+  color: #333;
+  background-color: #EEE;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.section-contact-us .name {
+  display: flex;
+}
+
+.section-contact-us input[name="name"] {
+  margin-right: 35px;
+  width: 330px;
+  font-size: 20px;
+}
+.section-contact-us input[name="email"] {
+  width: 330px;
+  font-size: 20px;
+}
+
+.section-contact-us input[name="subject"] {
+  width: 700px;
+  margin-top: 70px;
+}
+
+.section-contact-us input[name="message"] {
+  margin-top: 170px;
+  margin-bottom: 60px;
+  width: 700px;
+}
+
+.section-contact-us input::placeholder {
+  color: #BBB;
+  word-wrap: break-word;
+  word-break: break-all;
 }
